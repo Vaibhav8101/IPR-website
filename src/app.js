@@ -15,4 +15,8 @@ app.get("/faq", (req, res) => {
     res.render("faq");
 })
 
+app.get("/contacts", (req, res) => {
+    res.render("contacts");
+})
+
 app.listen(8000);
