@@ -5,18 +5,20 @@ const path = require("path")
 
 app.use(express.static(path.join(__dirname, "../public")));
 app.set('view engine', "ejs");
-
-
 app.get("/home", (req, res) => {
     res.render("home");
 })
 
 app.get("/faq", (req, res) => {
-    res.render("faq");
+    res.render("faq"); 
 })
 
 app.get("/contacts", (req, res) => {
-    res.render("contacts");
+    res.render("contacts"); 
 })
 
-app.listen(8000);
+app.get("/how-to-apply-for-a-patent-at-nit-delhi", (req, res) => {
+    res.render("howToFileIpr");
+})
+
+app.listen(8000); 
